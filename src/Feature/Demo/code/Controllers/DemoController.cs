@@ -29,7 +29,7 @@ namespace Sitecore.Feature.Demo.Controllers
 
         public DemoController(IContactProfileProvider contactProfileProvider, IProfileProvider profileProvider)
         {
-            this.contactProfileProvider = contactProfileProvider;
+            this.contactProfileProvider1 = contactProfileProvider;
             this.profileProvider = profileProvider;
         }
 
