@@ -65,7 +65,6 @@ gulp.task("02-Nuget-Restore", function (callback) {
 
 gulp.task("03-Publish-All-Projects", function (callback) {
   return runSequence(
-    "Build-Solution",
     "Publish-Foundation-Projects",
     "Publish-Feature-Projects",
     "Publish-Project-Projects", callback);
@@ -344,7 +343,6 @@ gulp.task("Package-Publish", function (callback) {
     config.buildConfiguration = "Release";
     fs.mkdirSync(config.websiteRoot);
     runSequence(
-      "Build-Solution",
       "Publish-Foundation-Projects",
       "Publish-Feature-Projects",
       "Publish-Project-Projects", callback);
